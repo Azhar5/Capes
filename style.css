@@ -1,0 +1,195 @@
+html {
+  /* The viewer implements a custom pinch zoom. */
+  touch-action: pan-x pan-y;
+}
+
+body {
+  background-color: rgb(82, 86, 89);
+  color: var(--primary-text-color);
+  line-height: 154%;
+  margin: 0;
+}
+
+viewer-page-indicator {
+  visibility: hidden;
+  z-index: 2;
+}
+
+viewer-pdf-toolbar {
+  position: fixed;
+  width: 100%;
+  z-index: 4;
+}
+
+#content {
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	border-bottom-width:100px;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 200px;
+}
+
+.img-ph {
+	width: 600px;
+	height: 400px;
+	background-image: url(C:\Users\Azhar\Desktop\Internship\website\website\graphic assets/ph.png);
+	background-size: 100%;
+
+	background-repeat:no repeat;
+	text-align: center;
+
+
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 300px;
+}
+.img-Precision {
+	width: 600px;
+	height: 400px;
+	background-image: url(C:\Users\Azhar\Desktop\Internship\website\website\graphic assets/Precision.png);
+	background-size: 100%;
+	background-repeat:no repeat;
+	text-align: center;
+
+}
+
+.img-Precision:hover {
+		background-size: 100%;
+
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 300px;
+}
+.img-Ultra {
+	width: 400px;
+	height: 400px;
+	background-image: url(C:\Users\Azhar\Desktop\Internship\website\website\graphic assets/Ultra Thin.png);
+	background-size: 100%;
+	background-repeat:no repeat;
+	text-align: center;
+
+}
+
+.img-Ultra:hover {
+		background-size: 100%;
+
+}
+.wrapper {
+	margin: 0 auto;
+	width: 300px;
+}
+.img-Ultra {
+	width: 400px;
+	height: 400px;
+	background-image: url(C:\Users\Azhar\Desktop\Internship\website\website\graphic assets/Ultra Thin.png);
+	background-size: 100%;
+	background-repeat:no repeat;
+	text-align: center;
+
+}
+
+.img-:hover {
+		background-size: 100%;
+
+}
+.wrapper {
+	margin: 0 auto;
+	width: 300px;
+}
+.img-SKIN {
+	width: 400px;
+	height: 400px;
+	background-image: url(C:\Users\Azhar\Desktop\Internship\website\website\graphic assets/Ultra Thin.png);
+	background-size: 100%;
+	background-repeat:no repeat;
+	text-align: center;
+
+}
+
+.img-SKIN:hover {
+		background-size: 100%;
+
+}
+.wrapper {
+	margin: 0 auto;
+	width: 320px;
+}
+.img-3D {
+	width: 200px;
+	height: 400px;
+	background-image: url(file:///C:/Users/Azhar/Desktop/website/website/graphic%20assets/main%20slide%20icon.svg);
+	background-size: 100%;
+	background-repeat:no repeat;
+	text-align: center;
+
+}
+
+.img-3D:hover {
+		background-size: 100%;
+
+}
+.wrapper {
+	margin: 0 auto;
+	width: 300px;
+}
+.img-Mask {
+	width: 400px;
+	height: 400px;
+	background-image: url(C:\Users\Azhar\Desktop\website\website\graphic assets/Mask.png);
+	background-size: 100%;
+	background-repeat:no repeat;
+	text-align: center;
+
+}
+
+.img-Mask:hover {
+		background-size: 100%;
+
+@-ms-viewport{
+	width: extend-to-zoom;
+	zoom:1.0;
+}
+
+viewer-ink-host,
+#plugin {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+#sizer {
+  position: absolute;
+  z-index: 0;
+}
+
+@media(max-height: 250px) {
+  viewer-pdf-toolbar {
+    display: none;
+  }
+}
+
+@media(max-height: 200px) {
+  viewer-zoom-toolbar {
+    display: none;
+  }
+}
+
+@media(max-width: 300px) {
+  viewer-zoom-toolbar {
+    display: none;
+  }
+}
